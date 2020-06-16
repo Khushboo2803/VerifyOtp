@@ -1,0 +1,26 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>VerifyOtp</title>
+        <script src="otp.js"></script>
+    </head>
+    <body>
+        <h1 id="head"></h1>
+        <script>
+            alert("OTP is send to your phone");
+            var url=document.location.toString();
+            var par=url.split('?');
+            var par=par[1].split('=')
+            var ph_no=par[1].split('&')
+            document.getElementById("head").innerHTML=ph_no[0];
+        </script>
+        <form>
+            <label>Enter OTP:
+                <input type="number" id="otp" placeholder="1234">
+            </label><br><br>
+            <input type="submit" name="Submit" onclick="verifyOTP()">
+        </form>
+    </body>
+
+</html>
