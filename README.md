@@ -1,5 +1,5 @@
 # VerifyOtp
-##UI for OTP verification flow
+## UI for OTP verification flow
 * Enter Mobile Number (and change country if required)
 * Click on “Send OTP”
 * Send backend request to verify OTP (show alert in this case, no need to add backend)
